@@ -1,0 +1,71 @@
+.gallery {
+	display: block;
+	@include tablet-port {
+		display: flex;
+	}
+	&__ul {
+		padding : {
+			top: em(20);
+			left: 30%;
+			bottom: 1px		
+		}
+		@include tablet-port {
+			top: em(110);
+			left: 53%;
+			bottom: 0;		
+		}
+	}
+	&__li {
+		margin : {
+			bottom: em(35);
+		}
+	}
+	&__anchor {
+		font-family: 'Lato';
+		font-size: rem(14);
+		color: $color-gallery-text-dark;
+		&_active {
+			color: $color-gallery-text-bright;
+		}
+	}
+
+	&__nav {
+		width: 100%;
+		float: none;
+		background: linear-gradient(to bottom right, $color-gray-gradient-top-left, $color-gray-gradient-bottom-right);
+		@include tablet-port {
+			width: 32%;
+			float: left;
+		}
+	}
+
+	&__photos {
+		width: 100%;
+		float: none;
+		background: $color-base-bright;
+		padding: {
+			top: em(28);
+			left: em(28);
+			bottom: em(42);
+		}
+		@include tablet-port {
+			width: 68%;
+			float: left;
+		}
+	}
+	&__photos-wrapper {
+		width: 100%;
+		column-count: 2;
+		@include tablet-port {
+			width: 70%;
+			column-count: 3;
+		}
+	}
+	&__photo {
+		float: left;
+
+		& img {
+			margin-bottom: em(18);
+		}
+	}
+}

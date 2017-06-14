@@ -1,0 +1,45 @@
+.quate-slider {
+	background: $color-base-green;
+	text-align: center;
+	font-family: 'Sintony';
+	padding: {
+		top: em(108);
+		bottom: em(150);
+	}
+
+	&__text {
+		position: relative;
+		font-size: 1.5rem;
+		@include tablet-port {
+			font-size: rem(30);
+		}
+		&::before, &::after {
+			font-size: 2.5em;
+			position: absolute;
+			width: .5em;
+			height: .5em;
+			@include tablet-port {
+				font-size: 4em;
+				position: absolute;
+			}
+		}
+		&::before{
+			content: '\201C';
+			top: -53%;
+    		left: 2.5%;	
+    		@include tablet-port {
+    			top: -92%;
+    		}	
+		}
+		&::after{
+			content: '\201D';
+			right: 2%;			
+		}
+	}
+	&__meta {
+		font-size: rem(18);
+		margin: {
+			top: rem(33);
+		}
+	}
+}

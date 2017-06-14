@@ -1,0 +1,14 @@
+@function em($pixels, $ref: 16) {
+	@return ($pixels / $ref) * 1em;
+}
+
+@function rem($pixels, $ref: 16) {
+	@return ($pixels / $ref) * 1rem;
+}
+
+@mixin center-element {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

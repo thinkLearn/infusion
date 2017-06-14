@@ -1,0 +1,60 @@
+.artists {
+	background: $color-base-bright;
+	padding-top: em(38);
+	padding-bottom: 0;
+	font-family: $content-font;
+	@include tablet-land {
+		padding-bottom: em(100);
+	}
+	&__single-wrapper {
+		max-width: 280px;
+		min-height: em(428);
+		position: relative;
+		border-bottom: 1px solid transparent;
+		margin-bottom: -1px;
+		&_active {
+			border: em(10) solid $color-base-green;
+			margin-bottom: 3em;
+			@include tablet-port {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	
+	&__face {
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		transform: translateX(-50%);
+		border: 3px solid $color-artists-face-border;
+		border-radius: 50%;
+		&_selected {
+			border-color: $color-base-green;
+		}
+	}
+	
+	&__title, &__text {
+		padding-left: rem(22);
+		padding-right: rem(22);
+		border-left: 1px solid fade-out($color-artists-text, .5);
+	}
+	&__title {
+		color: $color-gray-title;
+		font-size: rem(21);
+		padding-top: 34px;
+		&_selected {
+			border-left: 0;
+		}
+	}	
+
+	&__text {
+		color: $color-artists-text;
+		font-size: rem(14);
+		line-height: calc(24 / 14);
+		margin-bottom: rem(39);
+		&_selected {
+			border-left: 0;
+		}
+	}
+}

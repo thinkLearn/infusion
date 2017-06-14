@@ -1,0 +1,37 @@
+.footer {
+	padding: {
+		top: em(50);
+		bottom: em(100);
+	}
+	font-family: $content-font;
+	color: $color-footer-text;
+	&__grid {
+		margin-bottom: 1em;
+		@include tablet-port {
+			margin-bottom: 0;
+		}
+	}
+	&__text {
+		font-size: rem(14);
+		line-height: 1.7;
+	}
+	&__narrow-text {
+		padding-right: 8em;
+	}
+	&__wide-text {
+		padding-right: 0;
+		padding-left: 0;
+		@include tablet-port {
+			padding: {
+				right: 2em;
+				left: 2em;
+			}
+		}
+	}
+	&__nav-link {
+		display: block;
+		color: $color-footer-text;
+		font-size: rem(14);
+		margin-bottom: em(12);
+	}
+}

@@ -1,0 +1,123 @@
+.header {
+	position: relative;
+	height: em(72);
+	margin-bottom: 10%;
+	
+	@include tablet-port {
+		margin-bottom: 7%;
+	}
+	@include tablet-land {
+		margin-bottom: 0%;
+	}
+	@include wide {
+		margin-bottom: 0%;
+	}
+	&__logo {
+		float: none;
+		width: 100%;
+		height: em(72);
+		line-height: em(72);
+		@include tablet-land {
+			float: left;
+			width: 22.175%;
+		}
+	}
+
+	&__nav {
+		float: none;
+		position: relative;
+		z-index: 999999;
+		background: $color-base-bright;
+		width: 100%;
+		height: em(72);
+		line-height: em(72);
+		@include tablet-land {
+			float: left;
+			width: 77.825%;
+		}
+	}
+	&__ul {
+		background: rgba(255, 255, 255, .9);
+	    z-index: 9999999;
+	    position: relative;
+	    padding-left: 20%;
+	    display: none;
+	    @include tablet-land {
+	    	background: transparent;
+	    	position: static;
+	    	padding-left: 0;
+	    	display: block !important;
+	    }
+	}
+	&__li {
+		color: $color-header-nav;
+		font-weight: bold;
+		text-transform: uppercase;
+		display: block;
+		margin-left: auto;
+		&:first-child {
+				margin-left: auto;
+		}
+		@include tablet-land {
+			display: inline-block;
+			margin-left: 4.2037%;
+			&:first-child {
+				margin-left: 2.91%;
+			}
+		}
+	}
+
+	&__nav-link {
+		display: block;
+		font-family: 'Sintony Bold';
+		color: inherit;
+		font-size: em(14);
+		transition: color .3s ease-in-out;
+
+		&:hover {
+			text-decoration: none;
+			color: $color-base-green;
+		}
+	}
+	&__hamburger {
+	    position: relative;
+	    cursor: pointer;
+	    display: block;
+	    color: $color-header-nav;
+	    background: rgba(255, 255, 255, .9);
+	    padding-left: 38%;
+	    span {
+	    	display: inline-block;
+	    	transition: transform .5s ease;
+	   		&:hover {
+	    		transform: scale(1.2);
+	    	}	
+	    }
+	    
+
+		@include tablet-land {
+			display: none;
+		}
+	}
+}
+
+.logo {
+	text-transform: uppercase;
+	&__ele {
+		font-size: rem(19);
+		display: block;
+		float: none;
+		text-align: center;
+		padding-right: 0;
+		color: fade-out($color-base-bright, 0.1);
+		text-shadow: 0 0 3px $color-base-bright;
+		@include tablet-land {
+			float: right;
+			text-align: inherit;
+			padding-right: (34 / 362) * 100%;
+		}
+	}
+	&_header {
+		background: $color-base-green;
+	}
+}

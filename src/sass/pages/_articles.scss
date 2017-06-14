@@ -1,0 +1,18 @@
+.articles {
+	&__excerpt-bg {
+		display: none;
+	}
+	&__title {
+		background: $color-base-green;
+		text-transform: uppercase;
+		font-size: rem(24);
+		> h1 {
+			font-size: inherit;
+			padding: em(17) 0;
+		}
+	}
+	&__img {
+		width: 100%;
+		height: auto;
+	}
+}

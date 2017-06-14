@@ -1,0 +1,36 @@
+//
+// -- Main SCSS file  
+//
+  
+// load mixins
+@import 'mixins/mixins_general';
+@import 'mixins/mixins_breakpoints';
+@import 'mixins/mixins_grids';
+
+
+// load config
+@import 'config/config';
+
+// load base
+@import 'base/normalize';
+@import 'base/reset';
+@import 'base/helper_classes';
+@import 'base/typography';
+
+// load structure
+@import 'structure/header';
+@import 'structure/section';
+@import 'structure/footer';
+
+// load modules
+@import 'modules/grids';
+
+// load pages
+@import 'pages/hero';
+@import 'pages/artists';
+@import 'pages/text';
+@import 'pages/articles';
+@import 'pages/slider';
+@import 'pages/gallery';
+@import 'pages/quate-slider'; 
+

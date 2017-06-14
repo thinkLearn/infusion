@@ -1,0 +1,78 @@
+.slider {
+	height: em(320);
+	position: relative;
+	
+	@include phone-land {
+		height: em(560);
+	}
+	@include tablet-port {
+		height: em(560);
+	}
+	@include tablet-land {
+		height: em(600);
+	}
+	@include wide {
+		height: em(745);
+	}
+
+	&__wrapper {
+	}
+	&__img, &__img-bg {
+		@include center-element;
+	}
+	&__img-bg {
+		width: 90%;
+		@include tablet-land {
+			width: auto;
+		}
+	}
+	&__img {
+		width: 70%;
+		@include tablet-land {
+			width: auto;
+		}
+	}
+	&__arrow {
+		@include center-element;
+		font-size: 3rem;
+		font-family: 'dotum', sans-serif;
+		background: transparent;
+		border: none;
+		outline: none;
+
+		&_next {
+			top: auto;
+			bottom: -10%;
+			left: 26%;
+			color: $color-base-green;
+			@include phone-land {
+				top: auto;
+				bottom: -4%;
+				left: 15%;
+			}
+			@include tablet-land {
+				left: 20%;
+				top: 50%;
+				bottom: auto;
+				font-size: 8rem;
+			}
+		}
+		&_prev {
+			top: auto;
+			bottom: -10%;
+			left: 75%;
+			@include phone-land {
+				top: auto;
+				bottom: -4%;
+				left: 85%;
+			}
+			@include tablet-land {
+				right: 15%;
+				left: auto;
+				top: 50%;
+				bottom: auto;
+				font-size: 8rem;
+			}
+		}
+	}
+}

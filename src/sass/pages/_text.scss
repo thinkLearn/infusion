@@ -1,0 +1,41 @@
+.text {
+	background: linear-gradient(to bottom right, $color-gray-gradient-top-left, $color-gray-gradient-bottom-right);
+	border-top: 1px solid $color-text-border-top;
+	padding-top: em(75);
+	padding-bottom: em(110);
+	&__title, &__para {
+		font-family: $content-font;
+		color: $color-text-text;
+	}
+	&__title {
+		max-width: rem(514);
+		font-size: rem(21);
+		line-height: calc(32 / 21);
+		margin-bottom: em(18);  
+	}
+	&__para {
+		max-width: rem(576);
+		font-size: rem(14);
+		line-height: (28 / 14);
+		margin-top: em(16);
+	}
+	&__btn {
+		padding: em(15) em(40);
+		font-size: rem(18);
+		text-transform: uppercase;
+		color: $color-base-bright;
+		border: none;
+		border-radius: em(3);
+		margin-top: em(30);
+		margin-right: em(18);
+		&_light {
+			background: $color-base-green;
+		}
+		&_dark {
+			background: $color-gallery-text-dark;
+
+		}
+
+	}
+
+}

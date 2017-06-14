@@ -1,0 +1,51 @@
+//
+//-- Config
+//
+
+// colors
+
+$color-base-bright: #ffffff;
+$color-base-green: #63c6ae;
+$color-base-dark: #242a2c;
+$color-dark-btn: #455357;
+$color-gray-gradient-top-left: #f8f8f8;
+$color-gray-gradient-bottom-right: #f9f9f9;
+$color-text-border-top: #e8e8e8;
+$color-header-nav: #586165;
+$color-gray-title: #737c85;
+$color-artists-text: #929da5;
+$color-text-text: #737d84;
+$color-gallery-text-dark: #444e52;
+$color-gallery-text-bright: #a9b2ba;
+$color-footer-text: #454e51;
+$color-artists-face-border: #f3f3f3;
+
+// widths
+$site-width: 100em;
+
+$smallest-width: 20em;
+$very-small-width: 30em;
+$small-width: 49em;
+$medium-width: 60em;
+$large-width: 75em;
+$very-large-width: 100em;
+
+// fonts
+@font-face{
+	font-family: 'Sintony Regular';
+	src: url('../fonts/Sintony-Regular.eot') format('embedded-opentype'),
+		url('../fonts/Sintony-Regular.eot') format('opentype'),
+		url('../fonts/Sintony-Regular.woff'),
+		url('../fonts/Sintony-Regular.woff2')
+		;
+}
+@font-face{
+	font-family: 'Sintony Bold';
+	src: url('../fonts/Sintony-Bold.eot') format('embedded-opentype'),
+		url('../fonts/Sintony-Bold.eot') format('opentype'),
+		url('../fonts/Sintony-Bold.woff'),
+		url('../fonts/Sintony-Bold.woff2')
+		;
+}
+
+$content-font: "Helvetica Neue, Helvetica, Liberation Sans, Arial, sans-serif";

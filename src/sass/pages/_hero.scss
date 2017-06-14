@@ -1,0 +1,68 @@
+.hero {
+	height: em(400);
+	background: $color-base-dark url('../images/banner-main.jpg') no-repeat center center;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+	@include tablet-land {	
+		height: em(725);
+	}
+	&__content {
+		@include center-element;
+		width: 90%;
+		@include tablet-port {
+			width: 50%;
+		}
+	}
+	&__title, &__text {
+		text-align: center;
+	}
+	&__btn {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	&__title {
+		display: inline-block;
+		font-size: rem(12);
+		color: $color-base-bright;
+		padding: em(19.34) em(40);
+		background: $color-base-green;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+		@include tablet-port {
+			font-size: rem(15);
+		}
+		@include tablet-land {	
+			font-size: rem(30);
+		}
+	}
+
+	&__text {
+		display: inline-block;
+		font-size: rem(12);
+		line-height: 1.4;
+		padding: em(36) em(48);
+		background: $color-base-dark;
+		color: $color-base-bright;
+		@include tablet-land {	
+			font-size: rem(17);
+		}
+	}
+
+	&__btn {
+		margin-top: em(38);
+		text-transform: uppercase;
+		border: em(2) solid $color-base-bright;
+		border-radius: em(2);
+		color: $color-base-bright;
+		background-color: rgba(0, 0, 0, .2);
+		font-weight: normal;
+		font-size: rem(14);
+		padding: em(19) em(23);
+		@include tablet-land {	
+			font-size: rem(20);
+		}
+	}
+} 
