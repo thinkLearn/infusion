@@ -63,7 +63,9 @@
 	}
 	&__photo {
 		float: left;
-
+        @include wide {
+            float: none;
+        }
 		& img {
 			margin-bottom: em(18);
 		}
